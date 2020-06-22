@@ -1,0 +1,19 @@
+{
+  "name": "Popup",
+  "description": "Popup reminder",
+  "version": "1.0",
+  "browser_action": {
+     "default_icon": "reminder.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["app.css"],
+      "js": ["index.js"]
+    }
+  ],
+  "manifest_version": 2
+}
